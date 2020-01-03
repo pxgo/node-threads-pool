@@ -14,7 +14,9 @@ npm install node-threads-pool
 const TP = require("node-threads-pool");
 const tp = new TP(5);
 
-tp.run("./thread.js")
+tp.run("./thread.js", {
+  workerData: 40
+})
   .then(result => {
     console.log(result);
   })
