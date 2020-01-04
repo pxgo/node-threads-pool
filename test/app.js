@@ -1,5 +1,5 @@
 const TP = require("../index");
-const tp = new TP(20);
+const tp = new TP(10);
 
 for(var i = 0; i < 1000; i++) {
   tp.run(__dirname + "/thread.js", {
