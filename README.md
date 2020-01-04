@@ -1,4 +1,9 @@
 ## node-threads-pool
+[![David deps][david-image]][david-url]
+[![node version][node-image]][node-url]
+[![npm download][download-image]][download-url]
+[![npm license][license-image]][download-url]
+
 [david-image]: https://img.shields.io/david/pengxigua/node-threads-pool.svg?style=flat-square
 [david-url]: https://david-dm.org/pengxigua/node-threads-pool
 [node-image]: https://img.shields.io/badge/node.js-%3E=_12-green.svg?style=flat-square
