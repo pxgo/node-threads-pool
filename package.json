@@ -1,6 +1,6 @@
 {
   "name": "node-threads-pool",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "worker threads pool",
   "main": "index.js",
   "scripts": {

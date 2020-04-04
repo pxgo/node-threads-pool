@@ -12,12 +12,16 @@ module.exports = class {
     const self = this;
     const {_queue, _workers} = this;
     const worker = new Worker(filename, options);
-    worker.on("message", resolve);
-    worker.on("error", reject);
+    worker.on("message", message => {
+      resolve(message);
+      worker.terminate();
+    });
+    worker.on("error", error => {
+      resolve(error);
+      worker.terminate();
+    });
     worker.on("exit", code => {
       _workers.delete(worker);
-      worker.removeListener("message", ()=>{});
-      worker.removeListener("error", ()=>{});
       if(_queue.length > 0) {
         const {filename, options, resolve, reject} = _queue.splice(0, 1)[0];
         self.createWorker(filename, options, resolve, reject);
