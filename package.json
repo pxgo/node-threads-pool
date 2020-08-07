@@ -1,6 +1,6 @@
 {
   "name": "node-threads-pool",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "worker threads pool",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pengxigua/node-threads-pool.git"
+    "url": "git+https://github.com/pengxiguaa/node-threads-pool.git"
   },
   "keywords": [
     "workers",
@@ -16,10 +16,10 @@
     "threads",
     "pool"
   ],
-  "author": "pengxigua",
+  "author": "pengxiguaa",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pengxigua/node-threads-pool/issues"
+    "url": "https://github.com/pengxiguaa/node-threads-pool/issues"
   },
-  "homepage": "https://github.com/pengxigua/node-threads-pool#readme"
+  "homepage": "https://github.com/pengxiguaa/node-threads-pool#readme"
 }
