@@ -1,4 +1,5 @@
 const {Eve, Thread, isMainThread} = require('../index');
+const os = require('os');
 
 if(isMainThread) {
   main();
@@ -7,7 +8,7 @@ if(isMainThread) {
 }
 
 async function main() {
-  const tp = new Eve(__filename, 20);  
+  const tp = new Eve(__filename, os.cpus().length);  
   for(let i = 0; i < 1000; i++) {
     tp.run({index: i})
       .then(r => {
@@ -19,9 +20,8 @@ async function main() {
 async function thread() {
   new Thread(async (data) => {
     const {index} = data;
-    if(index < 100) return process.exit(1);
     const d = fn(42);
-    await sleep(1000);
+    await sleep(500);
     return {
       index,
       result: d

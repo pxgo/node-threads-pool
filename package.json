@@ -1,11 +1,11 @@
 {
   "name": "node-threads-pool",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "worker threads pool",
   "main": "index.js",
   "scripts": {
-    "eve": "node ./test/eve-example.js",
-    "adam": "node ./test/adam-example.js"
+    "eve": "node ./example/eve-example.js",
+    "adam": "node ./example/adam-example.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/pengxiguaa/node-threads-pool/issues"
   },
-  "homepage": "https://github.com/pengxiguaa/node-threads-pool#readme"
+  "homepage": "https://github.com/pengxiguaa/node-threads-pool#readme",
+  "dependencies": {
+    "pug": "^3.0.0"
+  }
 }
