@@ -64,11 +64,6 @@ Or write to the same JS file
 ```
 const {Eve, Thread, isMainThread} = require('node-threads-pool');
 
-async function threadFunc() {
-  const thread = new Thread(async (data) => {
-    return await doSomething(data);
-  });
-}
 
 if(isMainThread) {
   const tp = new Eve(__filename, 20);
@@ -76,7 +71,9 @@ if(isMainThread) {
     return await tp.run(data);
   };
 } else {
-  threadFunc();
+  new Thread(async (data) => {
+    return await doSomething(data);
+  });
 }
 ```
 
@@ -86,17 +83,13 @@ const pug = require('pug');
 const os = require('os');
 const {Eve, Thread, isMainThread} = require('node-threads-pool');
 
-async function threadFunc() {
+if(!isMainThread) {
   const options = {};
-  const thread = new Thread(_data => {
+  new Thread(_data => {
     const {template, data} = _data;
     options.data = data;
     return pug.renderFile(template, options);
   });
-}
-
-if(!isMainThread) {
-  threadFunc();
 } else {
   const tp = new Eve(__filename, os.cpus().length);
   module.exports = async (template, data) => {
