@@ -1,6 +1,6 @@
 {
   "name": "node-threads-pool",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Node-Threads-Pool is a tool for creating thread pools in Node.js, making it easy to implement efficient parallel computing. With Node-Threads-Pool, you can easily create and manage multiple threads, allocate tasks to worker threads in the thread pool, and maximize CPU resources to improve application performance.",
   "main": "index.js",
   "scripts": {
