@@ -1,7 +1,7 @@
 {
   "name": "node-threads-pool",
-  "version": "2.0.3",
-  "description": "worker threads pool",
+  "version": "2.0.4",
+  "description": "Node-Threads-Pool is a tool for creating thread pools in Node.js, making it easy to implement efficient parallel computing. With Node-Threads-Pool, you can easily create and manage multiple threads, allocate tasks to worker threads in the thread pool, and maximize CPU resources to improve application performance.",
   "main": "index.js",
   "scripts": {
     "eve": "node ./example/eve-example.js",
@@ -9,15 +9,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pengxiguaa/node-threads-pool.git"
+    "url": "git+https://github.com/pxgo/node-threads-pool.git"
   },
   "keywords": [
+    "worker",
+    "thread",
     "workers",
     "workers_threads",
     "threads",
     "pool"
   ],
-  "author": "pengxiguaa",
+  "author": "PxGo",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/pengxiguaa/node-threads-pool/issues"
