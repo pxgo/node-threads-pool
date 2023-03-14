@@ -22,9 +22,9 @@
   "author": "PxGo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pengxiguaa/node-threads-pool/issues"
+    "url": "https://github.com/pxgo/node-threads-pool/issues"
   },
-  "homepage": "https://github.com/pengxiguaa/node-threads-pool#readme",
+  "homepage": "https://github.com/pxgo/node-threads-pool#readme",
   "dependencies": {
     "pug": "^3.0.0"
   }
