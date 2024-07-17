@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/pxgo/node-threads-pool#readme",
   "dependencies": {
-    "pug": "^3.0.0"
+    "pug": "^3.0.3"
   }
 }
