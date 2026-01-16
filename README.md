@@ -59,6 +59,14 @@ tp.run(workerData)
   })
 ``` 
 
+When you no longer need the pool, call `destroy()` to immediately terminate all workers, reject any pending tasks, and release references so the instance can be garbage collected:
+
+```javascript
+// main.js
+
+tp.destroy();
+```
+
 You can create a new thread directly using the `Thread` class:
 
 ```javascript
